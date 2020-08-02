@@ -16,11 +16,34 @@
 			<img src="//www.adobe.com/images/shared/download_buttons/get_adobe_flash_player.png" alt="Get Adobe Flash player"/>
 		</a>
 	</div>
+	<div id="emu">
+		
+	</div>
 </div>
 
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
 <script src="//ajax.googleapis.com/ajax/libs/swfobject/2.2/swfobject.js"></script>
-
+<script>
+ 
+ 
+ 
+var NepPlayer = "#emu";     // ID of html element where the emulator will be inserted
+ 
+var NepEmu = "nds";         // Platform select
+ 
+var NepZoom = "enable";     // Add extra button on toolbar to scale up emulator. Disabled by default
+ 
+var NepMaxWidth = "1100px"; // Maximum width size of emulator. 870px by default
+ 
+var NepLang = "en";         // Interface language of the emulator. EN by default
+ 
+var Emundsair = "false";    // ( only for nds ) Swaps analog and dpad, need for some games like Kirby. Disabled by default
+ 
+var gameUrl = "file:///home/chronos/u-7ad21478cd3fe15783976f8f39d75644bb5df8f0/MyFiles/Downloads/Fire%20Emblem%20-%20Shadow%20Dragon%20(US)(Micronauts)%20(1).zip"; // Game Url
+ 
+</script>
+ 
+<script src="https://mem.neptunjs.com/njs/njsLoader.js" type="text/javascript"> //NeptunJS lib
 <script type="text/javascript">
 
 	var resizeOwnEmulator = function(width, height)
