@@ -92,8 +92,8 @@ var gameUrl = "file:///home/chronos/u-7ad21478cd3fe15783976f8f39d75644bb5df8f0/M
 
     <script type="text/javascript">
       // Client ID and API key from the Developer Console
-      var CLIENT_ID = '201096837398-e0pt37obq2eo9optfkb8vqh7m81ckvpe.apps.googleusercontent.com';
-      var API_KEY = 'AIzaSyC07CiGcbngyd5G1y9O7ILEnNyU5itFI8k';
+      var CLIENT_ID = '687229361992-rr0e3dq1nqce9b8fhnpceli0nal3h7g7.apps.googleusercontent.com';
+      var API_KEY = 'AIzaSyCIjOt08L6prJYmBfB01ak5K7ZzRpkWBqY';
 
       // Array of API discovery doc URLs for APIs used by the quickstart
       var DISCOVERY_DOCS = ["https://www.googleapis.com/discovery/v1/apis/drive/v3/rest"];
@@ -111,15 +111,10 @@ var gameUrl = "file:///home/chronos/u-7ad21478cd3fe15783976f8f39d75644bb5df8f0/M
       function handleClientLoad() {
         gapi.load('client:auth2', initClient);
       }
-.
+
       /**
        *  Initializes the API client library and sets up sign-in state
-       *  
-       
-       
-       
-       
-       eners.
+       *  listeners.
        */
       function initClient() {
         gapi.client.init({
@@ -192,7 +187,7 @@ var gameUrl = "file:///home/chronos/u-7ad21478cd3fe15783976f8f39d75644bb5df8f0/M
           appendPre('Files:');
           var files = response.result.files;
           if (files && files.length > 0) {
-            for (var i = 0; i < files.length; i++) {	      
+            for (var i = 0; i < files.length; i++) {
               var file = files[i];
               appendPre(file.name + ' (' + file.id + ')');
             }
@@ -208,7 +203,6 @@ var gameUrl = "file:///home/chronos/u-7ad21478cd3fe15783976f8f39d75644bb5df8f0/M
       onload="this.onload=function(){};handleClientLoad()"
       onreadystatechange="if (this.readyState === 'complete') this.onload()">
     </script>
-		
 
 	</body>
 </html>
